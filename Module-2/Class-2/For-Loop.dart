@@ -37,6 +37,19 @@ void main(){
   student.forEach((stu){
     print(stu);
   });// not well performance
+
+  Map<String, Map<String, String>> friend = {
+    'Iram': { 'address': 'mirpur', 'age': '20'},
+    'sabbir': { "address": "Gulshan", 'age': '30'}
+  };
+
+  for( String key in friend.keys){
+    print('my friends name is $key , address : ${friend[key]!['address']}, age : ${friend[key]!['age']}');
+  }
+  for(Map<String, String> key in friend.values){
+    print(key);
+    //print('my friends name is $key , address : ${friend[key]!['address']}, age : ${friend[key]!['age']}');
+  }
   // greeting();
   // greeting();
   // greeting();
