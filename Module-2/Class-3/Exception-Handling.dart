@@ -49,8 +49,17 @@ void main(){
   try{
     int parseInput = int.parse(input);
     print(parseInput);
+    throw MyException();
   }catch (e){
     print('catch 3');
+    print(e);//exception details
+  }
+  try{
+    throw MyException();
+    int parseInput = int.parse(input);
+    print(parseInput);
+  }catch (e){
+    print('catch 31');
     print(e);//exception details
   }
 
